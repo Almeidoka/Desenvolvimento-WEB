@@ -13,6 +13,21 @@ button:hover{
     transform: scale(1.05);
 }
 
+/* Barra superior */
+.site-header, .site-footer{
+    background-color: #00FF08;
+    color: #fff;
+}
+
+.main-navigation ul{
+    display:  flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 60px;
+    font-size: 23px;
+    
+}
+
 /* SOBRE MIM */
 
 section.sobre{
