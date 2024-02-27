@@ -28,6 +28,17 @@ button:hover{
     
 }
 
+.profit-pic{
+    float: left;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.main-navigation a{
+    color: #000;
+    text-decoration: none;
+}
+
 /* SOBRE MIM */
 
 section.sobre{
