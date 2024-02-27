@@ -17,6 +17,7 @@ button:hover{
 .site-header, .site-footer{
     background-color: #00FF08;
     color: #fff;
+    padding: 18px 0 ;
 }
 
 .main-navigation ul{
@@ -24,7 +25,7 @@ button:hover{
     justify-content: center;
     list-style-type: none;
     gap: 60px;
-    font-size: 23px;
+    font-size: 25px;
     
 }
 
@@ -33,14 +34,21 @@ button:hover{
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
 }
 .main-navigation a{
     color: #000;
     text-decoration: none;
 }
 
-/* SOBRE MIM */
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
 
+/* SOBRE MIM */
 section.sobre{
     padding: 40px 4%;
 
@@ -61,7 +69,7 @@ section.sobre.flex{
     color: #00FF08;
     display: block;
     
-}
+} 
 .sobre-mim .texto-sobremim p{
     margin: 10px 0;
     text-align: justify;
@@ -76,7 +84,40 @@ section.sobre.flex{
     cursor: pointer;
     margin: 0 6px;
     transition: .2s;
-
-
 }
 
+
+/* Projetos */
+
+
+.projeto{
+    color: #000;
+}
+.projeto  h2{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.projeto-grid{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.projeto-item{
+    background-color: #fff;
+    box-shadow: 0 0 10px #333;
+    border-radius: 5px;
+}
+
+.projeto-item img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-bottom: 3px solid black;
+}
+
+.project-info{
+    padding: 10px;
+}
