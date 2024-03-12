@@ -14,7 +14,7 @@ button:hover{
     transform: scale(1.05);
 }
 
-.interface-menu{
+.interface{
     max-width: 1280px;
     margin: 0 auto;
 }
@@ -48,14 +48,14 @@ h2.titulo span{
     color: #00FF08;
 }
 
-/* Cabeçalho */
+/* Cabeçalho -----------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 header{
     padding: 40px 4%;
     
 }
 
-header > .interface-menu{
+header > .interface{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -79,7 +79,7 @@ header nav ul li{
 }
 
 
-/* Topo do site */
+/* Topo do site -------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 section.topo-do-site{
     padding: 40px 4%;
@@ -117,11 +117,32 @@ section.topo-do-site .flex{
     }
 }
 
-/* Especialidades*/
+/* Especialidades----------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 section.especialidades{
     padding: 40px 4%;
 }
+section.especialidades .flex{
+    gap: 60px;
+}
+.especialidades .especialidades-box{
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ffffff5b;
+}
+.especialidades .especialidades-box i{
+    font-size: 70px;
+    color: #00FF08;
+    margin: 15px 0;
+}
+
 
 /* Barra superior */
 /*.site-header, .site-footer{
@@ -160,7 +181,7 @@ section.especialidades{
 }
 
 /* SOBRE MIM */
-section.sobre{
+section.sobre-mim{
     padding: 40px 4%;
 
 }
@@ -185,7 +206,7 @@ section.sobre.flex{
     margin: 10px 0;
     text-align: justify;
 }
-.sobre-mim .texto-sobremim .botao-ctts button{
+.botao-ctts button{
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -198,37 +219,126 @@ section.sobre.flex{
 }
 
 
-/* Projetos */
+/* Portifolio------------------------------------------------------------------------------------------------------------------------------------------- */
 
+section.portifolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 10px 5px #ffffff5b;
 
-.projeto{
-    color: #000;
 }
-.projeto  h2{
+section.portifolio .flex{
+    justify-content: space-around;
+    margin-top: 60px ;
+}
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 4s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+.img-port:hover{
+    background-position: 100% 100%;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b8 ;
+    border-radius: 40px;
     display: flex;
     justify-content: center;
-    list-style-type: none;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+.overlay:hover{
+    opacity: 1;
+}
+/*Rodapé-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+footer{
+    padding: 60px 4%;
+}
+footer .flex{
+    display: flex;
+    justify-content: space-between;
+}
+footer .linha-rodape{
+    padding: 20px 0;
+    border-bottom: 2px solid #00FF08;
+}
+footer .linha-rodape p i{
+    color: #fff;
+    font-size: 22px;
+}
+footer .linha-rodape p a {
+    color: #fff;
 }
 
-.projeto-grid{
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
+@media screen and (max-width: 1020px){
+    .flex {
+        flex-direction: column;
+    }
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
 
-.projeto-item{
-    background-color: #fff;
-    box-shadow: 0 0 10px #333;
-    border-radius: 5px;
-}
+    .menu-desktop, .btn-contato{
 
-.projeto-item img{
-    width: 100%;
-    height: 200px;
-    object-fit: contain;
-    border-bottom: 3px solid black;
-}
+    }
 
-.project-info{
-    padding: 10px;
+    .topo-do-site .txt-topo-site h1 {
+        font-size: 30px;
+    }
+    section .topo-do-site{
+    padding: 20px 8%;
+    }
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+    }
+    section .especialidades{
+        padding: 40px 8%;
+    }
+    section .sobre-mim{
+        padding: 40px 8%;
+    }
+    .sobre-mim .texto-sobremim h2{
+        font-size: 33px;
+        line-height: 35px;
+        text-align: center;
+    }
+    .botao-ctts{
+        text-align: center;
+    }
+    .profit-pic{
+        width: 100%;
+        height: 100%;
+    }
+    section.portifolio{
+        padding: 80px 8%;
+    }
+    .img-port{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+    section.portifolio .flex{
+        gap: 60px;
+    }
+    footer .flex {
+        flex-direction: column;
+    }
+    footer .linha-rodape {
+        text-align: center;
+    }
+
+
 }
