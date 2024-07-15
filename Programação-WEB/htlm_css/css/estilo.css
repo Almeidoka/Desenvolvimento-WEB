@@ -6,11 +6,11 @@
 
 }
 body{
-    background-color: #000;
+    background-color: var(--background-body,#000);
     height: 100vh;
 }
 button:hover{
-    box-shadow: 0px 0px 8px #00FF08;
+    box-shadow: 0px 0px 8px var(--color-body);
     transform: scale(1.05);
 }
 
@@ -26,7 +26,7 @@ button:hover{
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: #00FF08;
+    background-color: var(--color-body);
     border: 0;
     border-radius: 30px;
     cursor: pointer;
@@ -39,13 +39,13 @@ button:hover{
 }
 
 h2.titulo{
-    color: #fff;
+    color: var(--title-color);
     font-size: 38px;
     text-align: center;
 
 }
 h2.titulo span{
-    color: #00FF08;
+    color: var(--title-color);
 }
 
 /* Cabeçalho -----------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -95,7 +95,7 @@ section.topo-do-site .flex{
     line-height: 40px;
 }
 .topo-do-site .txt-topo-site h1 span{
-    color: #00FF08;
+    color: var(--color-body);
 }
 .topo-do-site .txt-topo-site p{
     color: #fff;
@@ -140,7 +140,7 @@ section.especialidades .flex{
 }
 .especialidades .especialidades-box i{
     font-size: 70px;
-    color: #00FF08;
+    color: var(--color-body);
     margin: 15px 0;
 }
 
@@ -199,7 +199,7 @@ section.sobre.flex{
     margin-bottom: 20px;
 }
 .sobre-mim .texto-sobremim h2 span{
-    color: #00FF08;
+    color: var(--color-body);
     display: block;
     
 } 
@@ -212,7 +212,7 @@ section.sobre.flex{
     height: 60px;
     border-radius: 50%;
     border: none;
-    background-color: #00FF08;
+    background-color: var(--color-body);
     font-size: 23px;
     cursor: pointer;
     margin: 0 6px;
@@ -274,7 +274,7 @@ footer .flex{
 }
 footer .linha-rodape{
     padding: 20px 0;
-    border-bottom: 2px solid #00FF08;
+    border-bottom: 2px solid var(--color-body);
 }
 footer .linha-rodape p i{
     color: #fff;
@@ -342,4 +342,18 @@ footer .linha-rodape p a {
     }
 
 
+}
+
+[data-tema = 'dark']{
+    --background-body: #000;
+    --background-container: #000;
+    --title-color: #000
+    --color-body: #00FF08;
+}
+
+[data-tema = 'light']{
+    --background-body: #fff;
+    --background-container: #fff;
+    --title-color: #fff
+    --color-body: #00FF08;
 }
