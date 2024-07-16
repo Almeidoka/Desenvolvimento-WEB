@@ -26,7 +26,7 @@ button:hover{
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: var(--color-body);
+    background-color: var(--color-button);
     border: 0;
     border-radius: 30px;
     cursor: pointer;
@@ -39,13 +39,13 @@ button:hover{
 }
 
 h2.titulo{
-    color: var(--title-color);
+    color: var(--color-txt);
     font-size: 38px;
     text-align: center;
 
 }
 h2.titulo span{
-    color: var(--title-color);
+    color: var(--color-body);
 }
 
 /* Cabeçalho -----------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -90,7 +90,7 @@ section.topo-do-site .flex{
     gap: 90px;
 }
 .topo-do-site .txt-topo-site h1{
-    color: #fff;
+    color: var(--color-txt);
     font-size: 42px;
     line-height: 40px;
 }
@@ -98,7 +98,7 @@ section.topo-do-site .flex{
     color: var(--color-body);
 }
 .topo-do-site .txt-topo-site p{
-    color: #fff;
+    color: var(--color-txt);
     margin: 40px 0;
 }
 .topo-do-site .img-topo-site img{
@@ -127,7 +127,7 @@ section.especialidades .flex{
     gap: 60px;
 }
 .especialidades .especialidades-box{
-    color: #fff;
+    color: var(--color-txt);
     padding: 40px;
     border-radius: 20px;
     margin-top: 45px;
@@ -191,7 +191,7 @@ section.sobre.flex{
     gap: 60px;
 }
 .sobre-mim .texto-sobremim{
-    color: #fff;
+    color: var(--color-txt);
 }
 .sobre-mim .texto-sobremim h2{
     font-size: 40px;
@@ -199,7 +199,7 @@ section.sobre.flex{
     margin-bottom: 20px;
 }
 .sobre-mim .texto-sobremim h2 span{
-    color: var(--color-body);
+    color: var(--color-txt);
     display: block;
     
 } 
@@ -212,7 +212,7 @@ section.sobre.flex{
     height: 60px;
     border-radius: 50%;
     border: none;
-    background-color: var(--color-body);
+    background-color: var(--color-button);
     font-size: 23px;
     cursor: pointer;
     margin: 0 6px;
@@ -277,11 +277,11 @@ footer .linha-rodape{
     border-bottom: 2px solid var(--color-body);
 }
 footer .linha-rodape p i{
-    color: #fff;
+    color: var(--color-txt);
     font-size: 22px;
 }
 footer .linha-rodape p a {
-    color: #fff;
+    color: var(--color-txt);
 }
 
 @media screen and (max-width: 1020px){
@@ -347,13 +347,17 @@ footer .linha-rodape p a {
 [data-tema = 'dark']{
     --background-body: #000;
     --background-container: #000;
-    --title-color: #000
+    --title-color: #000;
     --color-body: #00FF08;
+    --color-button: #00FF08;
+    --color-txt: #fff;
 }
 
-[data-tema = 'light']{
+[data-tema = 'light']{  
     --background-body: #fff;
     --background-container: #fff;
-    --title-color: #fff
+    --title-color: #fff;
     --color-body: #00FF08;
-}
+    --color-button: #00FF08;
+    --color-txt: #000;
+}   
