@@ -27,16 +27,22 @@ function verificarTema(){
     }
 }
 
-function copiar(){
-    const curriculo = document.getElementById("Contato").textContent;
-    const mostrarCurriculo = document.getElementById("Contato");
-    mostrarCurriculo.innerHTML='';
-    mostrarCurriculo.appendChild('16991951038');
-    navigator.clipboard.writeText(curriculo).then(()=>{
+function copiarWhatsApp(){
+    const txt_curriculo = '16991951038';
+    navigator.clipboard.writeText(txt_curriculo).then(() => {
         alert("Conteúdo copiado para a área de tranferência")
-    }).catch(error=>{
+    }).catch(error => {
         console.error("erro ao copiar", error);
         alert("Erro ao copiar o conteúdo");
     })
 }
 
+function copiarEmail() {
+    const txt_curriculo = 'gustavofederalgg@gmail.com';
+    navigator.clipboard.writeText(txt_curriculo).then(() => {
+        alert("Conteúdo copiado para a área de tranferência")
+    }).catch(error => {
+        console.error("erro ao copiar", error);
+        alert("Erro ao copiar o conteúdo");
+    })
+}
