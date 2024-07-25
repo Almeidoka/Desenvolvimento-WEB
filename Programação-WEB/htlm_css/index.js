@@ -12,6 +12,7 @@ function somar(){
 */
 document.addEventListener('DOMContentLoaded',()=>{
     verificarTema();
+    
 })
 
 function alterarTema(){
