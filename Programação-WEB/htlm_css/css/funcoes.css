@@ -6,32 +6,6 @@
 
 }
 
-#resultado {
-    margin-top: 18%;
-    text-align: center;
-    color: var(--color-txt);
-}
-#calculadora {
-    margin-top: 18%;
-    text-align: center;
-    width: 80px;
-    height: 30px;
-    margin-left: 40%;
-    text-align: center;
-}
-
-.button {
-    width: 70px;
-    height: 30px;
-    ;
-}
-
-#resultado {
-    width: 80px;
-    height: 23px;
-    text-align: center;
-}
-
 body {
     background-color: var(--background-body, #000);
     height: 100vh;
