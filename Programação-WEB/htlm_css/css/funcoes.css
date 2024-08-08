@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: var(--background-body, #000);
+    background-color: var(--background-body, #5a5757);
     height: 100vh;
 }
 
@@ -70,6 +70,8 @@ header a {
     text-decoration: none;
     display: inline-block;
     transition: .2s;
+    margin: 0 auto;
+
 }
 
 header a:hover {
@@ -85,83 +87,6 @@ header nav ul li {
     display: inline-block;
     padding: 0 40px;
 }
-
-
-/* Topo do site -------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-section.topo-do-site {
-    padding: 40px 4%;
-}
-
-section.topo-do-site .flex {
-    align-items: center;
-    justify-content: center;
-    gap: 90px;
-}
-
-.topo-do-site .txt-topo-site h1 {
-    color: var(--color-txt);
-    font-size: 42px;
-    line-height: 40px;
-}
-
-.topo-do-site .txt-topo-site h1 span {
-    color: var(--color-body);
-}
-
-.topo-do-site .txt-topo-site p {
-    color: var(--color-txt);
-    margin: 40px 0;
-}
-
-.topo-do-site .img-topo-site img {
-    position: relative;
-    animation: flutuar 2s ease-in-out infinite alternate-reverse;
-    border-radius: 50%;
-
-
-}
-
-@keyframes flutuar {
-    0% {
-        top: 0;
-
-    }
-
-    100% {
-        top: 30px;
-    }
-}
-
-/* Especialidades----------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-section.especialidades {
-    padding: 40px 4%;
-}
-
-section.especialidades .flex {
-    gap: 60px;
-}
-
-.especialidades .especialidades-box {
-    color: var(--color-txt);
-    padding: 40px;
-    border-radius: 20px;
-    margin-top: 45px;
-    transition: .2s;
-}
-
-.especialidades .especialidades-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px #ffffff5b;
-}
-
-.especialidades .especialidades-box i {
-    font-size: 70px;
-    color: var(--color-body);
-    margin: 15px 0;
-}
-
 
 /* Barra superior */
 /*.site-header, .site-footer{
@@ -200,56 +125,13 @@ section.especialidades .flex {
     display: table;
 }
 
-/* SOBRE MIM */
-section.sobre-mim {
-    padding: 40px 4%;
-
-}
-
-section.sobre.flex {
-    align-items: center;
-    gap: 60px;
-}
-
-.sobre-mim .texto-sobremim {
-    color: var(--color-txt);
-}
-
-.sobre-mim .texto-sobremim h2 {
-    font-size: 40px;
-    line-height: 40px;
-    margin-bottom: 20px;
-}
-
-.sobre-mim .texto-sobremim h2 span {
-    color: var(--color-txt);
-    display: block;
-
-}
-
-.sobre-mim .texto-sobremim p {
-    margin: 10px 0;
-    text-align: justify;
-}
-
-.botao-ctts button {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: none;
-    background-color: var(--color-button);
-    font-size: 23px;
-    cursor: pointer;
-    margin: 0 6px;
-    transition: .2s;
-}
 
 
 /* Portifolio------------------------------------------------------------------------------------------------------------------------------------------- */
 
 section.portifolio {
     padding: 80px 4%;
-    box-shadow: 0 0 10px 5px #ffffff5b;
+    /* box-shadow: 0 0 10px 5px #ffffff5b; */
 
 }
 

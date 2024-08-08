@@ -51,7 +51,13 @@ h2.titulo span{
 /* Cabeçalho -----------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 header{
-    padding: 40px 4%;
+    background-color: var(--color-header, #000);
+    color: #000000;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
     
 }
 
@@ -77,12 +83,15 @@ header nav ul li{
     display: inline-block;
     padding: 0 40px;
 }
+.menu-desktop{
+    list-style: none;
+}
 
 
 /* Topo do site -------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 section.topo-do-site{
-    padding: 40px 4%;
+    padding: 100px 10%;
 }
 section.topo-do-site .flex{
     align-items: center;
@@ -284,7 +293,11 @@ footer .linha-rodape p a {
     color: var(--color-txt);
 }
 
-@media screen and (max-width: 1020px){
+@media screen and (max-width: 768px){
+    .interface {
+            max-width: 1280px;
+            margin: 0 auto;
+    }
     .flex {
         flex-direction: column;
     }
@@ -302,6 +315,7 @@ footer .linha-rodape p a {
     section .topo-do-site{
     padding: 20px 8%;
     }
+    
     .topo-do-site .img-topo-site img {
         width: 100%;
     }
@@ -344,8 +358,9 @@ footer .linha-rodape p a {
 
 }
 
-[data-tema = 'dark']{
-    --background-body: #000;
+[data-tema='dark'] {
+    --color-header: #000;
+    --background-body: #181818;
     --background-container: #000;
     --title-color: #000;
     --color-body: #00FF08;
@@ -354,6 +369,7 @@ footer .linha-rodape p a {
 }
 
 [data-tema = 'light']{  
+    --color-header:#fff;
     --background-body: #fff;
     --background-container: #fff;
     --title-color: #fff;
